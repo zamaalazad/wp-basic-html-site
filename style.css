@@ -4,6 +4,12 @@
     @import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&display=swap');
 
 /* Global Styles Here */
+
+    :root{
+        --default-color: #212F3D;
+        --button-color: #566573;
+        --input-box-shadow: 0 0 36px rgba(0,0,0,.05);
+    }
     
     body{
         font-family: 'Hind Siliguri', sans-serif;
@@ -20,8 +26,53 @@
         box-sizing: border-box;
     }
 
-/* Header Styles Here */
+    ul li,
+    ol li{
+        list-style-type: none;
+    }
 
+    a:link,
+    a:visited{
+        text-decoration: none;
+        color: var(--default-color);
+    }
+
+    .transition{
+        transition: all .3s ease-in;
+    }
+/* Header Styles Here */
+    header{
+        padding: 20px 160px;
+        background-color: aliceblue;
+    }
+
+    header nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .navigation{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .navigation form input{
+        padding: 10px;
+        border: none;
+        outline: 0;
+        font-size: 14px;
+        border-radius: 4px;
+    }
+
+    .navigation form input{
+        box-shadow: var(--input-box-shadow);
+    }
+
+    .navigation form input:hover{
+        box-shadow: 0 0 30px rgba(0,0,0,.25);
+    }
     
 
 /* Navigation Styles Here */
