@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css"> -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <main>
+
+        <header>
+            <nav>
+                <div class="brand">
+                    <a href="index.html">
+                        <h1>শখের ডেভেলপার</h1>
+                    </a>
+                </div>
+                <ul class="navigation">
+                    <form action="">
+                        <input class="transition" type="text" placeholder="খুঁজুন">
+                    </form>
+                    <li><a class="menu-button" href="">&#43; মেনু</a></li>
+                </ul>
+            </nav>
+        </header> <!-- Header Close Here -->
+
+
+
+        <article>
+
+        <div class="post__single">
+            <h1 class="post-title__single">পোস্টের শিরোনাম এখানে রাখুন</h1>
+            <div class="post-meta__single">
+                <div class="post-author-image__main">
+                    <img src="https://i.pinimg.com/736x/69/3c/2c/693c2c35bf133deed4656e52e3ed4827.jpg" alt="">
+                    <a href="">রচনাকারী</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="right-sidebar__main">
+
+            <div class="recent-posts">
+                <h4 class="widget-title">সাম্প্রতিক পোস্ট</h4>
+                <div class="recent-posts-content-container">
+                    <div class="recent-posts-content">    
+                        <img src="https://i.pinimg.com/736x/69/3c/2c/693c2c35bf133deed4656e52e3ed4827.jpg" alt="">
+                        <div class="post-details">
+                            <a href=""><h4>পোস্ট শিরোনাম</h4></a>
+                            <p><a href="">বিভাগ</a></p>
+                        </div>
+                    </div>
+                    <div class="recent-posts-content">    
+                        <img src="https://i.pinimg.com/736x/69/3c/2c/693c2c35bf133deed4656e52e3ed4827.jpg" alt="">
+                        <div class="post-details">
+                            <a href=""><h4>পোস্ট শিরোনাম</h4></a>
+                            <p><a href="">বিভাগ</a></p>
+                        </div>
+                    </div>
+                    <div class="recent-posts-content">    
+                        <img src="https://i.pinimg.com/736x/69/3c/2c/693c2c35bf133deed4656e52e3ed4827.jpg" alt="">
+                        <div class="post-details">
+                            <a href=""><h4>পোস্ট শিরোনাম</h4></a>
+                            <p><a href="">বিভাগ</a></p>
+                        </div>
+                    </div>
+                    <div class="recent-posts-content">    
+                        <img src="https://i.pinimg.com/736x/69/3c/2c/693c2c35bf133deed4656e52e3ed4827.jpg" alt="">
+                        <div class="post-details">
+                            <a href=""><h4>পোস্ট শিরোনাম</h4></a>
+                            <p><a href="">বিভাগ</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- Recent Posts Close Here -->
+
+            <div class="post-tags">
+                <h4 class="widget-title">জনপ্রিয় ট্যাগ</h4>
+                <ul class="post-tags__sidebar">
+                    <li><a href="">পোস্ট</a></li>
+                    <li><a href="">ট্যাগ</a></li>
+                </ul>
+            </div>
+        </div> <!-- Right Sidebar Close Here -->
+
+    </article> <!-- Article Close Here -->
+
+    <footer>
+        <p>
+            কপিরাইট &copy; শখের ডেভেলপার, <span id="footer_date"></span>
+        </p>
+    </footer><!-- Footer Close Here -->
+
+</main>
+
+<script>
+    const d = new Date();
+    document.getElementById('footer_date').innerHTML = d.getFullYear();
+</script>
+</body>
+</html>

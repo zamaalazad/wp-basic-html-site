@@ -136,12 +136,23 @@
         margin-top: 20px;
     }
 
+    .post-author-image__main img{
+        width: 32px;
+        margin-right: 14px;
+        border-radius: 4px;
+    }
+
+    .post-read-more__main a{
+        display: inline-block;
+        margin-top: 20px;
+    }
+
 /* Left Sidebar Goes Here */
 
 /* Right Sidebar Goes Here */
     .recent-posts-content-container{
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 1fr;
         gap: 20px;
         align-items: center;
         padding: 20px 0;
@@ -150,9 +161,15 @@
     .recent-posts-content{
         border: 1px solid #dddddd;
         border-radius: 4px;
-        padding: 20px;
+        padding: 15px;
         display: flex;
         gap: 14px;
+    }
+
+    .recent-posts-content img{
+        width: 64px;
+        height: 64px;
+        border-radius: 4px;
     }
 
     .post-tags__sidebar{
