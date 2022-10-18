@@ -86,6 +86,25 @@
 
     .menu-button{
         font-weight: 600;
+        cursor: pointer;
+    }
+
+    .main-menu{
+        display: flex;
+        align-items: center;
+        opacity: 0;
+        z-index: -999;
+        transition: opacity 300ms ease-in,
+                    z-index 400ms ease-in;
+    }
+
+    .main-menu > *{
+        margin: 0 8px;
+    }
+
+    .isActive{
+        opacity: 1;
+        z-index: 999;
     }
 
 /* Articles Goes Here */
@@ -109,7 +128,7 @@
     }
 
     .post-date__main{
-        font-size: 12px;
+        font-size: 14px;
         color: #566573;
         font-weight: 700;
     }
@@ -183,6 +202,57 @@
         font-size: 24px;
     }
 /* Footer Goes Here */
+
+/* Single Page Styles Here */
+.post-title__single{
+    font-size: 48px;
+    color: rgba(0,0,0,.87);
+}
+
+.post-meta__single{
+    display: flex;
+    align-items: center;
+}
+
+.post-meta__main{
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
+/* Article Single Page Styles Here */
+.post-content__single{
+    margin: 40px 0;
+    font-size: 22px;
+    line-height: 38px;
+}
+
+.post-content__single > *{
+    margin: 20px 0;
+}
+
+.post-content__single figure img{
+    width: 100%;
+    border-radius: 8px;
+}
+
+.post-content__single figure figcaption{
+    font-size: 14px;
+}
+
+.post-tags__single,
+.post-tags__single ul{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.post-tags__single ul li a{
+    background: rgba(0,0,0,.05);
+    border-radius: 4px;
+    padding: 0 12px;
+    font-size: 14px;
+    font-weight: 700;
+}
 
 /* Responsive Styles Here */
 
