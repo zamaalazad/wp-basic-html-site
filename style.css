@@ -42,11 +42,7 @@
         transition: all .3s ease-in;
     }
 /* Header Styles Here */
-    header,
-    article,
-    footer{
-        padding: 20px 160px;
-    }
+    
 
     header,
     footer{
@@ -255,5 +251,50 @@
 }
 
 /* Responsive Styles Here */
+@media screen and (min-width: 960px){
+    .mobile{
+        display: none;
+    }
 
+    header,
+    article,
+    footer{
+        padding: 20px 160px;
+    }
+}
 
+@media screen and (max-width: 959px){
+    .screen{
+        display: none;
+    }
+
+    header,
+    article,
+    footer{
+        padding: 20px 80px;
+    }
+}
+
+@media screen and (max-width: 668px){
+    .screen {
+        display: none;
+    }
+
+    header,
+    article,
+    footer{
+        padding: 20px;
+    }
+
+    .main-menu__mobile{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 40px;
+        background: #ffffff;
+    }
+}
